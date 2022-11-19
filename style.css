@@ -25,6 +25,7 @@
     width: 25px;
     cursor: pointer;
     transform: rotate(-35deg);
+    display: none;
 }
 nav{
     flex: 1;
@@ -108,4 +109,33 @@ button{
     text-align: center;
     color: rgb(255, 255, 255);
     cursor: pointer;
+}
+.social-media a{
+    height: 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+.social-media{
+    text-align: center;
+}
+@media only screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        background-color: #ce4a7c;
+        position: absolute;
+        top: 75px;
+        right: 0px;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: rgb(255, 255, 255);
+    }
+    .fa-sharp{
+        display: block;
+    }
 }
