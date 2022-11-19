@@ -33,13 +33,79 @@ nav{
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 40px 0;
 }
 nav ul li a{
     text-decoration: none;
     color: rgb(8, 6, 6);
-    font-size: small;
+    font-size: large;
+    margin: 20px;
 }
 nav ul li a:hover{
     color: #c4b6b8;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.first{
+    flex-basis: auto;
+    position: relative;
+    margin-left: 30px;
+}
+.first h2{
+    font-size: 60px;
+}
+.first h3{
+    font-size: 30px;
+    color: #616161;
+    margin: 20px 0 10px;
+}
+.first h4{
+    font-size: 18px;
+    color: #161515;
+    margin: 15px 0;
+}
+button{
+        background-color: #ce4a7c;
+        border: none;
+        color: rgb(253, 253, 253);
+        padding: 10px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        border-radius: 12px;
+        cursor: pointer;
+}
+.second{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.controller{
+    width: 80%;
+}
+.box{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  background-color: #ce4a7c;
+  transform: translateX(90px);
+  z-index: -1;
+}
+.fa-regular{
+    width: 30px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color:rgb(255, 255, 255)
+}
+.cart{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
